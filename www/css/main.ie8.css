@@ -1,0 +1,34 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "calibri";
+    src: url("../fonts/calibri.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "myriadpro-regular";
+    src: url("../fonts/myriadpro-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "etelkaboldpro";
+    src: url("../fonts/etelkaboldpro.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
+.sign-in > div,
+.menu ol,
+.address {
+    background: url("../img/black.1.png");
+}
+.address,
+.menu li:hover {
+    background: url("../img/black.3.png");
+}
+.menu li.active {
+    background: url("../img/black.5.png");
+}

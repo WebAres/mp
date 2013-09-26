@@ -1,0 +1,27 @@
+/* prepeid */
+.prepeid {
+    padding: 39px 45px 10px;
+}
+.prepeid h1{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    text-shadow: 1px 1px 0 #312d26;
+}
+.prepeid p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+/* /prepeid */
+/* sub-menu */
+.sub-menu {
+    display: inline-block;
+    vertical-align: top;
+    width: 235px;
+}
+.sub-menu h2 {
+    
+}
+/* /sub-menu */
