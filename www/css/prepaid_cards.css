@@ -15,13 +15,64 @@
     margin-bottom: 23px;
 }
 /* /prepeid */
+
 /* sub-menu */
 .sub-menu {
     display: inline-block;
     vertical-align: top;
     width: 235px;
+    padding-top: 26px;
+}
+.sub-menu:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: 7px;
+    width: 2px;
+    background: url("../img/dots__v.png");
+    left: 233px;
+    z-index: 0;
 }
 .sub-menu h2 {
-    
+    background: #a8a29a;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 0 11px 45px;
+    margin-bottom: 35px;
+    z-index: 2;
+}
+.sub-menu h2:after {
+    content: '';
+    background: #43a550 url("../img/menu__active.png") no-repeat center 0;
+    height: 6px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.sub-menu ul {
+    padding: 0 10px 0 8px;
+}
+.sub-menu li {
+    background: url("../img/dots__h.png") repeat-x 0 bottom;
+    padding: 0 0 10px 37px;
+    margin-bottom: 14px;
+}
+.sub-menu a,
+.sub-menu a:visited
+.sub-menu span {
+    font-size: 19px;
+    color: #4f4639;
+}
+.sub-menu a:hover {
+    color: #44a73f;
+}
+.sub-menu .active a,
+.sub-menu .active a:visited
+.sub-menu .active span {
+    color: #44a73f;
+    cursor: default;
 }
 /* /sub-menu */
