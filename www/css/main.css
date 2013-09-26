@@ -786,3 +786,24 @@ a:visited {
     background: #4f4639;
 }
 /* --------------- /footer --------------- */
+
+
+
+/* niceChecks */
+.niceCheck {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/nice-radio-check.png) -9px 0 no-repeat;
+    overflow: hidden;
+}
+.niceChecked {
+    background-position: 0 0;
+}
+.niceCheck input {
+    margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+.niceCheckDisabled {
+    background-position: -18px 0;
+}

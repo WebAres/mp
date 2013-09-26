@@ -1,4 +1,13 @@
-{
+.partners-table__wrap:before {
+    display: none;
+}
+.partners-table__wrap > .before {
+    box-shadow: 3px 3px 10px #bbb;
+}
+
+
+
+.partners-table__wrap > .before {
 	behavior: url(css/pie.htc);
 	zoom: 1;
 }

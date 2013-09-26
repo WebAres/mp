@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Pobocky2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="css/partners.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.partners.js"></script>
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css">
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="site__header">
+
+            <!-- sign-in -->
+            <div class="sign-in">
+                <div>
+                    <h2>Tady se můžete <span>Přihlásit</span></h2>
+                    <form action="#" id="sign-in">
+                        <input type="email" required class="sign-in__input sign-in__mail" placeholder="Email">
+                        <input type="password" required class="sign-in__input sign-in__password" placeholder="Password">
+                        <input type="submit" class="sign-in__send" value="Přihlásit">
+                        <span>Zapomeli ste <a href="#">heslo</a> nebo <a href="#">email</a>?</span>
+                        <div>Email address cannot be blank</div>
+                    </form>
+                    <button class="sign-in__close" title="close"></button>
+                </div>
+            </div>
+            <!-- sign-in -->
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout site__header-layout_first">
+                <div>
+
+                    <!-- logo -->
+                    <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="214" height="76" alt="Money Polo"></a>
+                    <!-- /logo -->
+
+                    <button class="site__header-sign-in">Přihlásit</button>
+                </div>
+            </div>
+            <!-- /site__header-layout -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a href="#">Private</a>
+                    </li>
+                    <li class="active">
+                        <span>Business</span>
+                    </li>
+                    <li>
+                        <a href="#">O nás</a>
+                    </li>
+                </ol>
+            </nav>
+            <!-- /menu -->
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout site__header-layout_support">
+                <div>
+
+                    <!-- language -->
+                    <div class="language">
+                        <button>Change Language</button>
+                    </div>
+                    <!-- /language -->
+
+                    <!-- support -->
+                    <div class="support">
+                        <button>Support</button>
+                    </div>
+                    <!-- /support -->
+
+                </div>
+            </div>
+            <!-- /site__header-layout -->
+
+            <!-- address -->
+            <address class="address">
+                <div>
+                    <ul>
+                        <li>Email: <a href="mailto:support@uwcfs.com">support@uwcfs.com</a></li>
+                        <li>Tel: <a href="tel:+44 (0) 208 956 2251">+44 (0) 208 956 2251</a></li>
+                        <li>Skype: <a href="skype:uwcfs.com">uwcfs.com</a></li>
+                        <li><a class="address__lnk" href="#">FAQ</a></li>
+                        <li><a class="address__lnk" href="#">Pobočky</a></li>
+                    </ul>
+                </div>
+            </address>
+            <!-- /address -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- site__content-center -->
+            <div class="site__content-center">
+
+
+                <!-- prepeid -->
+                <section class="prepeid">
+                    <h1>pobočky</h1>
+                    <p>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida
+                        velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit. This is Photoshop's version  of Lorem Ipsum. Proin gravida
+                        velit auctor aliquet. Aenean sollicitudin.
+                    </p>
+                </section>
+                <!-- /prepeid -->
+
+
+            </div>
+            <!-- /site__content-center -->
+
+            <!-- site__content-grey -->
+            <div class="site__content-grey">
+                <!-- site__content-center -->
+                <div class="site__content-center">
+
+
+                    <!-- partners -->
+                    <div class="partners">
+
+                        <!-- partners-map -->
+                        <section class="partners-map">
+
+                            <header class="partners-map__header">
+                                <a class="show-on-map" href="#" data-address="Kostelní 128, Kaplice">Spátky na Mapu</a>
+                                <h2>Pobočky</h2>
+                            </header>
+
+                            <!-- partners-map__section -->
+                            <div class="partners-map__section">
+
+                                <div class="map-wrap"></div>
+
+
+                                <!-- partners-map__column -->
+                                <div class="partners-map__column">
+
+                                    <!-- partners__requirements -->
+                                    <div class="partners__requirements">
+                                        <h3>Vaše požadavky</h3>
+                                        <ul>
+                                            <li>
+                                                <input class="niceCheck" type="checkbox" id="require1" name="require" value="req1">
+                                                <label for="require1">Dobít účet MoneyPolo</label>
+                                            </li>
+                                            <li>
+                                                <input class="niceCheck" type="checkbox" id="require2" name="require" value="req2">
+                                                <label for="require2">Odeslat peněžní převod</label>
+                                            </li>
+                                            <li>
+                                                <input class="niceCheck" type="checkbox" id="require3" name="require" value="req3">
+                                                <label for="require3">Odeslat peněžní převod</label>
+                                            </li>
+                                            <li>
+                                                <input class="niceCheck" type="checkbox" id="require4" name="require" value="req4">
+                                                <label for="require4">Pořídit si předplacenou kartu MoneyPolo</label>
+                                            </li>
+                                            <li>
+                                                <input class="niceCheck" type="checkbox" id="require5" name="require" value="req5">
+                                                <label for="require5">Zaplatit příkaz k hrade</label>
+                                            </li>
+                                            <li>
+                                                <input class="niceCheck" type="checkbox" id="require6" name="require" value="req6">
+                                                <label for="require6">Zobrazit pobočky otevřené o víkendech</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /partners__requirements -->
+
+                                    <!-- partners__impulse -->
+                                    <div class="partners__impulse">
+
+                                        <h3>MoneyPolo Impuls</h3>
+
+                                        <address>
+                                            <span class="address__row address_text"><span>Adresa:</span> Kostelní 128, Kaplice</span>
+                                            <span class="address__row"><span>Telefon:</span> 23423423</span>
+                                            <span class="address__row"><span>Pracovni doba:</span> 9:00 - 17:00</span>
+                                            <span class="address__row"><span>So:</span> -</span>
+                                            <span class="address__row"><span>Ne:</span> -</span>
+                                        </address>
+
+                                    </div>
+                                    <!-- /partners__impulse -->
+
+                                </div>
+                                <!-- /partners-map__column -->
+
+                            </div>
+                            <!-- /partners-map__section -->
+
+                        </section>
+                        <!-- /partners-map -->
+
+                        <!-- partners-table -->
+                        <div class="partners-table__wrap">
+
+                            <!--[if lte IE 8]><div class="before"></div><![endif]-->
+
+                            <table class="partners-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Název pobočky</th>
+                                        <th>Adresa</th>
+                                        <th>Telefon</th>
+                                        <th>Pracovní doba</th>
+                                        <th>Pracovní doba (SO)</th>
+                                        <th>Pracovní doba (NE)</th>
+                                        <th>Dostupné operace</th>
+                                        <th>Úkon</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>MONEY POLO (Infobus)</td>
+                                        <td>Na Florenci 23, Praha 1</td>
+                                        <td>00420790889535</td>
+                                        <td>08:00 – 19:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>odesílání, obdržení</td>
+                                        <td><a class="show-on-map" href="#" data-address="Na Florenci 23, Praha 1">ukázat na mapě</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MONEY POLO (Jutas)</td>
+                                        <td>Bubenecska 308/13, Praha 6</td>
+                                        <td>00420790889535</td>
+                                        <td>08:00 – 19:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>odesílání, obdržení</td>
+                                        <td><a class="show-on-map" href="#" data-address="Bubenecska 308/13, Praha 6">ukázat na mapě</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MONEY POLO (XXL Trans)</td>
+                                        <td>Vaclavské nám. 48, Praha 1</td>
+                                        <td>00420790889535</td>
+                                        <td>08:00 – 19:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>odesílání, obdržení</td>
+                                        <td><a class="show-on-map" href="#" data-address="Vaclavské nám. 48, Praha 1">ukázat na mapě</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MONEY POLO (Amka Spol S.R.O)</td>
+                                        <td>Revolucní 13, office 219, Praha 1</td>
+                                        <td>00420790889535</td>
+                                        <td>08:00 – 19:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>odesílání, obdržení</td>
+                                        <td><a class="show-on-map" href="#" data-address="Revolucní 13, office 219, Praha 1">ukázat na mapě</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>MONEY POLO (Amka)</td>
+                                        <td>Tlusteho 2041/20, Praha 9</td>
+                                        <td>00420790889535</td>
+                                        <td>08:00 – 19:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>08:00 – 15:00</td>
+                                        <td>odesílání, obdržení</td>
+                                        <td><a class="show-on-map" href="#" data-address="Tlusteho 2041/20, Praha 9">ukázat na mapě</a></td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                        <!-- partners-table -->
+
+
+                    </div>
+                    <!-- /partners -->
+
+
+                </div>
+                <!-- /site__content-center -->
+
+                <!-- site__content-center -->
+                <div class="site__content-center">
+
+                    <aside class="sub-menu">
+                        <h2></h2>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </aside>
+
+                </div>
+                <!-- /site__content-center -->
+
+            </div>
+            <!-- /site__content-grey -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="site__footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+            <div>
+
+                <!-- footer__nav -->
+                <nav class="footer__nav">
+                    <dl>
+                        <dt>Private</dt>
+                        <dd><a href="#">Money Transfer</a></dd>
+                        <dd><a href="#">PrePaid Cards</a></dd>
+                        <dd><a href="#">Bill Payment</a></dd>
+                        <dd><a href="#">Payment Accounts</a></dd>
+                        <dd><a href="#">Exchange</a></dd>
+                        <dd><a href="#">Zákaznícka podpora</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Business</dt>
+                        <dd><a href="#">Small customers</a></dd>
+                        <dd><a href="#">Corporate customers</a></dd>
+                        <dd><a href="#">Regulated customers</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>O Nás</dt>
+                        <dd><a href="#">Proč my / Výhody</a></dd>
+                        <dd><a href="#">Naše vize</a></dd>
+                        <dd><a href="#">Podporujeme</a></dd>
+                        <dd><a href="#">Náš tým</a></dd>
+                        <dd><a href="#">Kariéra</a></dd>
+                        <dd><a href="#">Stát se partnerem</a></dd>
+                        <dd><a href="#">Affiliate program</a></dd>
+                    </dl>
+                </nav>
+                <!-- /footer__nav -->
+
+                <!-- footer__location -->
+                <div class="footer__location">
+                    <h2>Change Location:</h2>
+                    <form action="#" id="footer-location">
+                        <select class="footer-location__select">
+                            <option value="Czech republic" selected>Czech republic</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Central Africa">Central Africa</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Czech republic">Czech republic</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Central Africa">Central Africa</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                        </select>
+                    </form>
+
+                    <!-- footer__social -->
+                    <div class="footer__social">
+                        <h2>Follow:</h2>
+                        <ul>
+                            <li class="f"></li>
+                            <li class="t"></li>
+                            <li class="in"></li>
+                            <li class="s"></li>
+                        </ul>
+                    </div>
+                    <!-- /footer__social -->
+
+                </div>
+                <!-- /footer__location -->
+
+            </div>
+        </div>
+        <!-- /footer__layout -->
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+            <div>
+
+                <!-- footer__menu -->
+                <nav class="footer__menu">
+                    <ol>
+                        <li><a href="#">Mapa Stránek </a></li>
+                        <li><a href="#">O webu</a></li>
+                        <li><a href="#">VOP</a></li>
+                        <li><a href="#">Ochrana osobných údajú</a></li>
+                        <li><a href="#">Ke stažení</a></li>
+                        <li><a href="#">Fraud prevention</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ol>
+                </nav>
+                <!-- /footer__menu -->
+
+                <!-- footer__sponsors -->
+                <ul class="footer__sponsors">
+                    <li><a href="#"><img src="pic/metaquotes.png" alt=""></a></li>
+                    <li><a href="#"><img src="pic/swift.png" alt=""></a></li>
+                    <li><a href="#"><img src="pic/dowjones.png" alt=""></a></li>
+                </ul>
+                <!-- /footer__sponsors -->
+
+            </div>
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>
