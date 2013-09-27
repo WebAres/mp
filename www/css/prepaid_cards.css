@@ -22,6 +22,7 @@
     vertical-align: top;
     width: 235px;
     padding-top: 26px;
+    margin-right: 61px;
 }
 .sub-menu:after {
     content: '';
@@ -61,7 +62,7 @@
     margin-bottom: 14px;
 }
 .sub-menu a,
-.sub-menu a:visited
+.sub-menu a:visited,
 .sub-menu span {
     font-size: 19px;
     color: #4f4639;
@@ -70,9 +71,229 @@
     color: #44a73f;
 }
 .sub-menu .active a,
-.sub-menu .active a:visited
+.sub-menu .active a:visited,
 .sub-menu .active span {
     color: #44a73f;
     cursor: default;
 }
 /* /sub-menu */
+
+/* allifiate */
+.allifiate {
+    padding: 43px 0 0 0;
+}
+.allifiate:first-child{
+    padding: 43px 0 288px 0;
+    background: url("../img/allifiate.png") no-repeat 1px bottom;
+}
+.allifiate h2 {
+    position: relative;
+    font-size: 30px;
+    color: #4f4639;
+    text-shadow: 0 0 2px #4f4639;
+    padding-left: 81px;
+    margin-bottom: 43px;
+}
+.allifiate h2:after {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: -1px;
+    background: url("../img/allifiate__h2.png");
+    width: 73px;
+    height: 66px;
+}
+.allifiate h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+.allifiate b{
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.allifiate p {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 42px;
+}
+.allifiate li {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 32px;
+    position: relative;
+}
+.allifiate li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 6px;
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    background: #5b5449;
+}
+/* /allifiate */
+
+/* prepeid-card */
+.prepeid-card {
+    padding-top: 56px;
+}
+.prepeid-card h2 {
+    position: relative;
+    font-size: 30px;
+    color: #4f4639;
+    text-shadow: 0 0 2px #4f4639;
+    padding-left: 64px;
+    margin-bottom: 33px;
+}
+.prepeid-card h2:after {
+    content: '';
+    position: absolute;
+    top: -28px;
+    left: -1px;
+    background: url("../img/prepeid-card__h2.png");
+    width: 55px;
+    height: 108px;
+}
+.prepeid-card p{
+    font-size: 17px;
+    padding-left: 3px;
+    line-height: 20px;
+    margin-bottom: 21px;
+}
+.prepeid-card b {
+    font-weight: bold;
+}
+.prepeid-card li {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 32px;
+    position: relative;
+}
+.prepeid-card li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 6px;
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    background: #5b5449;
+}
+.prepeid-card__visa {
+    position: relative;
+    padding: 29px 0 39px 252px;
+}
+.prepeid-card__visa > img {
+    position: absolute;
+    top: 32px;
+    left: 2px;
+}
+.prepeid-card__visa > h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+.prepeid-card__visa > b {
+    display: block;
+    margin-bottom: 5px;
+}
+.prepeid-card__visa dl {
+    overflow: hidden;
+}
+.prepeid-card__visa dt {
+    float: left;
+    clear: both;
+    width: 155px;
+    margin-bottom: 5px;
+}
+.prepeid-card__visa dd {
+    float: left;
+}
+.prepeid-card__visa a,
+.prepeid-card__visa a:visited {
+    position: absolute;
+    left: 4px;
+    top: 182px;
+    color: #4f4639;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.prepeid-card__visa a:hover {
+    text-decoration: none;
+}
+/* /prepeid-card */
+
+/* nase-vize */
+.nase-vize {
+    padding-top: 56px;
+}
+.nase-vize h2 {
+    position: relative;
+    font-size: 30px;
+    color: #4f4639;
+    text-shadow: 0 0 2px #4f4639;
+    margin-bottom: 33px;
+}
+.nase-vize p{
+    font-size: 17px;
+    padding-left: 3px;
+    line-height: 20px;
+    margin-bottom: 21px;
+}
+.nase-vize b {
+    font-weight: bold;
+}
+.nase-vize .accordion p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 32px;
+    position: relative;
+}
+.nase-vize .accordion div {
+    padding-left: 32px;
+}
+/* /nase-vize */
+
+/* accordion */
+.accordion{
+    padding: 22px 11px 0 3px;
+    counter-reset: item;
+}
+.accordion > dt{
+    counter-increment: item;
+    font-size: 20px;
+    font-weight: bold;
+    background: url("../img/dots__h.png") repeat-x 0 bottom;
+    padding: 0 0 12px 0;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+.accordion > dt:before {
+    content: counter(item)'.';
+}
+.accordion > dt:after{
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    background: url("../img/arrow1.png") no-repeat 0 0;
+    width: 9px;
+    height: 15px;
+    margin: 3px 0 0 13px;
+}
+.accordion > dt.opened:after {
+    background: url("../img/arrow2.png") no-repeat 0 0;
+    width: 15px;
+    height: 9px;
+    margin: 6px 0 0 2px;
+}
+.accordion > dd {
+    margin-bottom: 21px;
+    display: none;
+
+}
+/* /accordion */

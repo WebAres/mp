@@ -285,6 +285,12 @@ a:visited {
     background: url("../img/green.png") repeat-x 0 bottom, -ms-linear-gradient(top,  #45af3b 0%,#349c2b 100%);
     background: url("../img/green.png") repeat-x 0 bottom, linear-gradient(to bottom,  #45af3b 0%,#349c2b 100%);
 }
+.site__content-wrap {
+    width: 575px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+}
 /* --------------- /site --------------- */
 
 /* --------------- address --------------- */
@@ -786,24 +792,3 @@ a:visited {
     background: #4f4639;
 }
 /* --------------- /footer --------------- */
-
-
-
-/* niceChecks */
-.niceCheck {
-    width: 9px;
-    height: 9px;
-    display: inline-block;
-    cursor: pointer;
-    background: url(../img/nice-radio-check.png) -9px 0 no-repeat;
-    overflow: hidden;
-}
-.niceChecked {
-    background-position: 0 0;
-}
-.niceCheck input {
-    margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
-}
-.niceCheckDisabled {
-    background-position: -18px 0;
-}
